@@ -5,21 +5,8 @@ namespace LuckyTicket
 {
     class Program
     {
-    /*    public int[] toIntegerArray(int number)
-        {
-            int a = number;
-            List<int> l = new List<int>();
-            while (a > 0)
-            {
-                l.Add(a % 10);
-                a = a / 10;
-            }
-            return l.ToArray();
-        }
-    */
         static void Main(string[] args)
-        {
-            
+        {           
             Console.WriteLine(Welcome());
             string ans = "Y";
             while ((ans == "Y")||(ans=="y"))
@@ -75,7 +62,7 @@ namespace LuckyTicket
                     p += num[n + i];
 
                 }
-                //Выводим результат
+                //Получаем результат
                 if (m == p) { result = "Your ticket is lucky!"; }
                 else { result = "Your tichket isn`t lucky, try again"; }
             }
