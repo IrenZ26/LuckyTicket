@@ -12,11 +12,12 @@ namespace LuckyTicket
             while ((ans == "Y")||(ans=="y"))
             {
                 Console.WriteLine("If you want to continue enter Y/y");//если пользователь хочет продолжить работу
+                Console.WriteLine("If you want to exit pess any other key");//если пользователь хочет закончить работу
                 ans = Console.ReadLine();
                 if (ans == "Y") { Console.WriteLine(Welcome()); }
                 else if (ans == "y") { Console.WriteLine(Welcome()); }
             }
-
+            Console.WriteLine("Goodbye!");
         }
         public static string Welcome()
         {
